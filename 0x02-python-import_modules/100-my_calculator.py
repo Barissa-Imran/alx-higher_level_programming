@@ -7,7 +7,7 @@ if __name__ == "__main__":
     def calc(args):
         operators = ["+", "-", "*", "/"]
 
-        if len(args) -1 != 3:
+        if len(args) != 4:
             print("Usage: ./100-my_calculator.py <a> <operator> <b>")
             sys.exit(1)
         else:
@@ -28,6 +28,6 @@ if __name__ == "__main__":
                 sys.exit(1)
 
     args = sys.argv
-    print("{0} {1} {2} = {3}".format(args[1], args[2], args[3], calc(args)))
+    print("{:d} {} {:d} = {:d}".format(args[1], args[2], args[3], calc(args)))
 
 
