@@ -15,5 +15,5 @@
 </p>
   </h1>
   <p>This repository contains programs and scripts created in the ALX Africa SE boot-camp high-level programming (Sprint-2).
-  The Python programming language</ p>
+  The Python programming language.</ p>
 </div>
