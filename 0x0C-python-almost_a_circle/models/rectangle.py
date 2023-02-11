@@ -4,16 +4,21 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """Represent a rectangle"""
+    """Represent a rectangle."""
 
-    def ___init__(self, width, height, x=0, y=0, id=None):
-        """
-        Initialize a new Rectangle.
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """Initialize a new Rectangle.
         Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
-            x (int): The x coordinate of the new rectangle.
-            y (int): The y coordinate of the new rectangle.
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
+            x (int): The x coordinate of the new Rectangle.
+            y (int): The y coordinate of the new Rectangle.
+            id (int): The identity of the new Rectangle.
+        Raises:
+            TypeError: If either of width or height is not an int.
+            ValueError: If either of width or height <= 0.
+            TypeError: If either of x or y is not an int.
+            ValueError: If either of x or y < 0.
         """
         self.width = width
         self.height = height
@@ -23,7 +28,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """set/get the width of the rectangle"""
+        """Set/get the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -36,7 +41,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """set/get the height of the rectangle"""
+        """Set/get the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -49,7 +54,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """set/get the x coordinate of the rectangle"""
+        """Set/get the x coordinate of the Rectangle."""
         return self.__x
 
     @x.setter
@@ -62,7 +67,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """set/get the y coordinate of the rectangle"""
+        """Set/get the y coordinate of the Rectangle."""
         return self.__y
 
     @y.setter
@@ -83,9 +88,9 @@ class Rectangle(Base):
             print("")
             return
 
-        [print("---") for y in range(self.y)]
+        [print("") for y in range(self.y)]
         for h in range(self.height):
-            [print("$", end="") for x in range(self.x)]
+            [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for w in range(self.width)]
             print("")
 
