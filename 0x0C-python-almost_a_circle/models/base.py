@@ -45,7 +45,7 @@ class Base:
         """
         filename = str(cls.__name__) + ".json"
         with open(filename, "w") as jsonfile:
-            if list_objs is None:
+            if list_objs is None or list_objs == []:
                 jsonfile.write("[]")
             else:
                 list_dicts = [o.to_dictionary() for o in list_objs]
