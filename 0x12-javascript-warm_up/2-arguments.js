@@ -3,10 +3,10 @@ const count = process.argv.length;
 
 let myVar;
 if (count === 2) {
-    myVar = 'No argument';
+  myVar = 'No argument';
 } else if (count === 3) {
-    myVar = 'Argument found';
+  myVar = 'Argument found';
 } else {
-    myVar = 'Arguments found';
+  myVar = 'Arguments found';
 }
-console.log(myVar)
+console.log(myVar);
