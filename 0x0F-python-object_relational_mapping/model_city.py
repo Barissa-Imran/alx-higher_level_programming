@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 class City(Base):
-    """Defines a City"""
+    """class that Defines a City"""
     __tablename__ = 'cities'
     id = Column(Integer, unique=True, nullable=False,
                 primary_key=True)
